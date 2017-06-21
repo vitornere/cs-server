@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from bricks.contrib.mdl import button, div
-from bricks.html5 import ul, li, a, i, select, option, input, table, tbody, thead, th, td, tr
+from bricks.html5 import ul, li, a, i, select, option, h1, input, table, tbody, thead, th, td, tr
 from codeschool.bricks import navbar as _navbar, navsection
 from .bricks import navbar, layout, activities_layout
 
@@ -66,3 +66,11 @@ def rating(request):
     ]
     }
     return render(request, 'sparta/rating.jinja2', ctx)
+
+def grades(request):
+    ctx = {
+        'content_title': 'Notas',
+        'content_body': h1('hello world')        
+    }
+    return render(request, 'sparta/grades.jinja2', ctx)
+    
