@@ -1,7 +1,6 @@
 from codeschool.bricks import navbar as _navbar, navsection, navsection_page_admin
 from bricks.html5 import a, div, h1, h2, ul, li, button
 from codeschool.bricks import card_container, simple_card, with_class
-from simple_search import search_filter
 # import members_list from back end
 
 def navbar():
