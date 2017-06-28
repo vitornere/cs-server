@@ -70,7 +70,20 @@ def rating(request):
 def grades(request):
     ctx = {
         'content_title': 'Notas',
-        'content_body': h1('hello world')        
+        'content_body': table()[
+            thead()[
+                    tr()[
+                            th('Aluno'),
+                            th('Nota')
+                        ]
+                ],
+            tbody()[
+                    tr()[
+                            td('Aluno 1'),
+                            td('Nota 1')
+                        ]
+                ]
+        ]        
     }
     return render(request, 'sparta/grades.jinja2', ctx)
     

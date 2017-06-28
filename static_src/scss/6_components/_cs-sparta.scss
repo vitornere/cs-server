@@ -6,4 +6,11 @@
             font-size: 17px;
         }
     }
+    &__grades-table {
+        thead {
+            tr {
+                background: green;
+            }
+        }
+    }
 }
